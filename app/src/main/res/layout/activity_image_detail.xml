@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <!--使用自定义的viewpager防止photoView缩放时程序崩溃-->
+    <com.rain.glidedemo.image.ImageDetailViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <TextView
+        android:id="@+id/pageCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        tools:text="2/3" />
+
+</FrameLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rain.glidedemo.MainActivity">
+
+    <!--按钮区-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_downloadOnly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="downloadOnly" />
+
+        <Button
+            android:id="@+id/btn_loadImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="load" />
+
+        <Button
+            android:id="@+id/btn_customAPI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义api" />
+
+    </LinearLayout>
+
+    <!--按钮区-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_addView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="addView" />
+
+        <Button
+            android:id="@+id/btn_setAndLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="imageView先设置再glide加载" />
+
+    </LinearLayout>
+
+    <!--按钮区-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_nine_recycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nine_recycler" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容区"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是内容"
+            />
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/img_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ccc"
+                android:scaleType="centerCrop" />
+
+            <android.support.v4.widget.ContentLoadingProgressBar
+                android:id="@+id/progressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#ccc"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>
